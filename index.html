@@ -4,159 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nuestra Historia de Amor ❤️</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;500;700&display=swap');
-
-        :root {
-            --rosa: #ff69b4;
-            --rojo: #ff3860;
-            --dorado: #ffd700;
-            --degradado: linear-gradient(135deg, #ff69b4 0%, #ff3860 100%);
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Poppins', sans-serif;
-            background: #fff0f5;
-            overflow-x: hidden;
-        }
-
-        .corazon-flotante {
-            position: fixed;
-            font-size: 2em;
-            animation: flotar 3s infinite;
-            opacity: 0.7;
-            z-index: -1;
-        }
-
-        @keyframes flotar {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-20px); }
-        }
-
-        header {
-            background: var(--degradado);
-            padding: 100px 20px;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        h1 {
-            font-family: 'Great Vibes', cursive;
-            font-size: 4em;
-            color: white;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-            margin-bottom: 20px;
-        }
-
-        .timeline {
-            max-width: 800px;
-            margin: 50px auto;
-            padding: 20px;
-        }
-
-        .momento {
-            background: white;
-            border-radius: 15px;
-            padding: 20px;
-            margin: 20px 0;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            position: relative;
-            transition: transform 0.3s;
-        }
-
-        .momento:hover {
-            transform: translateY(-5px);
-        }
-
-        /* Nuevos estilos para imágenes */
-        .image-container {
-            position: relative;
-            width: 100%;
-            height: 200px;
-            overflow: hidden;
-            border-radius: 10px;
-        }
-
-        .image-container img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.3s;
-            border-radius: 10px;
-        }
-
-        .image-container:hover img {
-            transform: scale(1.05);
-        }
-
-        .galeria {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 10px;
-            padding: 20px;
-        }
-
-        .video-container {
-            position: relative;
-            width: 100%;
-            height: 200px;
-            overflow: hidden;
-            border-radius: 10px;
-        }
-
-        video {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            cursor: pointer;
-            transition: transform 0.3s;
-            border-radius: 10px;
-        }
-
-        video:hover {
-            transform: scale(1.05);
-        }
-
-        .frase-destacada {
-            font-family: 'Great Vibes', cursive;
-            font-size: 2.5em;
-            text-align: center;
-            margin: 50px 0;
-            color: var(--rojo);
-        }
-
-        .contador-amor {
-            background: var(--degradado);
-            color: white;
-            padding: 30px;
-            text-align: center;
-            margin: 50px 0;
-        }
-
-        .boton-romantico {
-            background: var(--degradado);
-            color: white;
-            padding: 15px 40px;
-            border: none;
-            border-radius: 30px;
-            font-size: 1.2em;
-            cursor: pointer;
-            transition: transform 0.3s;
-            display: block;
-            margin: 20px auto;
-        }
-
-        .boton-romantico:hover {
-            transform: scale(1.05);
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="corazon-flotante" style="left: 10%; top: 20%">❤️</div>
@@ -165,17 +13,17 @@
 
     <header>
         <h1>Nuestra Historia de Amor</h1>
-        <p style="color: white; font-size: 1.2em;">"Eres mi razón para seguir viviendo" ❤️</p>
+        <p class="subtitulo-header">"Eres mi razón para seguir viviendo" ❤️</p>
     </header>
 
     <div class="timeline">
-        <!-- Sección Gloss modificada -->
+        <!-- Sección Gloss -->
         <div class="momento">
             <h2>Nuestro Primer Gloss 💄</h2>
             <p>8 de Febrero 2025 - Cuando empezó todo...</p>
             <div class="galeria">
                 <div class="image-container">
-                    <img src="00003204-PHOTO-2025-03-01-11-31-24.jpg" alt="Nuestro primer gloss">
+                    <img src="assets/imagenes/00003204-PHOTO-2025-03-01-11-31-24.jpg" alt="Nuestro primer gloss">
                 </div>
             </div>
         </div>
@@ -187,24 +35,24 @@
             <div class="galeria">
                 <div class="video-container">
                     <video controls>
-                        <source src="video1.mp4" type="video/mp4">
+                        <source src="assets/videos/video1.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="video-container">
                     <video controls>
-                        <source src="video2.mp4" type="video/mp4">
+                        <source src="assets/videos/video2.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="video-container">
                     <video controls>
-                        <source src="video3.mov" type="video/mp4">
+                        <source src="assets/videos/video3.mov" type="video/mp4">
                     </video>
                 </div>
             </div>
         </div>
 
         <div class="frase-destacada">
-            "Te amo más que a mi vape favorito" 💨❤️
+            "Te amo más que los cigarros ❤️"
         </div>
 
         <div class="contador-amor">
@@ -212,68 +60,21 @@
             <div id="contador">0 días, 0 horas, 0 minutos</div>
         </div>
 
-        <!-- Sección Peluches modificada -->
+        <!-- Sección Peluches -->
         <div class="momento">
             <h2>Nuestros Peluches 🧸</h2>
             <p>La colección que representa nuestro amor:</p>
             <div class="galeria">
                 <div class="image-container">
-                    <img src="2.jpg" alt="Peluche morado">
+                    <img src="assets/imagenes/2.jpg" alt="Peluche morado">
                 </div>
                 <div class="image-container">
-                    <img src="1.jpg" alt="Peluche azul">
+                    <img src="assets/imagenes/1.jpg" alt="Peluche azul">
                 </div>
             </div>
         </div>
 
-        <button class="boton-romantico" onclick="mostrarMensajeSecreto()">Nuestro Secreto 🤫</button>
-    </div>
-
-    <script>
-        const fechaInicio = new Date('2025-02-08');
-        
-        function actualizarContador() {
-            const ahora = new Date();
-            const diferencia = ahora - fechaInicio;
-            
-            const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
-            const horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
-            
-            document.getElementById('contador').innerHTML = 
-                `${dias} días, ${horas} horas, ${minutos} minutos de amor puro ❤️`;
-        }
-
-        setInterval(actualizarContador, 1000);
-        actualizarContador();
-
-        function mostrarMensajeSecreto() {
-            const mensajes = [
-                "Eres mi persona favorita en el mundo entero 🌍",
-                "Me haces más feliz que encontrar un nuevo gloss 💄",
-                "Quiero despertar contigo todos mis días ☀️",
-                "Eres mi mejor apuesta ganada 🎰",
-                "Te amo más que a todos los peluches juntos 🧸"
-            ];
-            
-            const mensajeAleatorio = mensajes[Math.floor(Math.random() * mensajes.length)];
-            alert(mensajeAleatorio);
-        }
-
-        document.addEventListener('DOMContentLoaded', () => {
-            for(let i = 0; i < 50; i++) {
-                const corazon = document.createElement('div');
-                corazon.className = 'corazon-flotante';
-                corazon.style.left = Math.random() * 100 + '%';
-                corazon.style.top = Math.random() * 100 + '%';
-                corazon.innerHTML = ['❤️', '💖', '💝'][Math.floor(Math.random() * 3)];
-                document.body.appendChild(corazon);
-            }
-        });
-    </script>
-</body>
-</html>
-        <!-- Sección del Poema -->
+        <!-- Sección Poema -->
         <div class="momento">
             <h2>Nuestra Historia Escrita ✍️</h2>
             <div class="poema-container">
@@ -319,61 +120,10 @@
                 </div>
             </div>
         </div>
+
+        <button class="boton-romantico" onclick="mostrarMensajeSecreto()">Nuestro Secreto 🤫</button>
     </div>
 
-    <style>
-        /* Estilos para el poema */
-        .poema-container {
-            background: white;
-            border-radius: 15px;
-            padding: 30px;
-            margin: 20px 0;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            position: relative;
-            border: 2px solid var(--rosa);
-        }
-
-        .poema-content {
-            max-width: 600px;
-            margin: 0 auto;
-            background: linear-gradient(45deg, #fff0f5 0%, #ffe4f4 100%);
-            padding: 25px;
-            border-radius: 10px;
-        }
-
-        .poema-texto {
-            font-family: 'Poppins', sans-serif;
-            color: #5a5a5a;
-            line-height: 1.8;
-            text-align: justify;
-            font-size: 1.1em;
-        }
-
-        .poema-texto br {
-            margin-bottom: 15px;
-            display: block;
-            content: "";
-        }
-
-        .firma {
-            display: block;
-            margin-top: 30px;
-            font-family: 'Great Vibes', cursive;
-            font-size: 2em;
-            color: var(--rojo);
-            text-align: right;
-            padding-right: 30px;
-        }
-
-        h3 {
-            font-family: 'Great Vibes', cursive;
-            font-size: 2.5em;
-            color: var(--rojo);
-            text-align: center;
-            margin-bottom: 20px;
-        }
-    </style>
-
-<!-- ... (El resto del código se mantiene igual) ... -->
+    <script src="script.js"></script>
 </body>
 </html>
